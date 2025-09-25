@@ -62,3 +62,80 @@ SELECT *
 --so, i think it will be a cross join?
 
 --its such a weird vizualization.
+
+-------------------------------------------------09 25 2025-------------------------------
+
+--ok,
+--I will mainly focus on working out the connection between the tables.
+--it must be somewhere in the problem
+--otherwise,
+--not sure what I would do.
+
+--yeah,
+
+--my understanding of this problem is changing 
+
+--reading it has changed it.
+
+--i think i am loading or assigning positions in the grades table.?
+
+--yeah.
+--this is such a weird task.
+
+--do I do inner join?
+
+--the joining column though?
+--which is it then?
+
+--like I think they are joined but the join condition is a subquery?
+
+--this is assuming that the join can be done as a subquery.
+
+--yeah,
+--ON Studens.Marks = 
+--	(SELECT 
+
+--ok, now I am gorgeously lost.
+--how could I join this?
+--but also,
+--is my understanding completely wrong?
+--could be.
+
+--I think I like to get lost in learning.
+--I am reminded what that interviewer taught me 
+--that I have to understand the question better.
+
+--ok,
+--seems grade might be the better 
+
+--the line "The report must be in descending order by grade -- i.e. higher grades are entered first."
+
+--is making me hallucinate an answer where I get some sort of sorting algorythm going to separate between min and max mark.
+--it is just a hallucination.
+--but I think just even working it out is a week long venture.
+--I am trying to see if I get a new understanding.
+--
+
+--maybe I need to release the understanding I have right now
+--
+--reading the problem more
+--is making me keep pointing to this definitely being some sort of complex  join.
+--the join is/has a subquery.
+--or is an IF statement
+
+--IF Marks.74 is between Min_Mark.70 and Max_Mark.79
+--yeah this is a weird one.
+
+--I am sure that I have done this king of subquery join condition before style.
+--so I am confident.
+
+--but it failed hillariously last time so it makes me feel bad about using it again.
+
+--what else can there be though?
+--I need to work on this sorting.
+
+--it is a sorting thing right?
+
+--I might look into for next time.
+
+--
