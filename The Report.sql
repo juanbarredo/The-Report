@@ -139,3 +139,68 @@ SELECT *
 --I might look into for next time.
 
 --
+--------------------------------------09 28 2025------------------------------------
+
+--alright,
+--I get to continue working on this weird problem.
+
+--this line in the hackerrank website
+--has awakened new possibilities for me
+
+--"Ketty doesn't want the NAMES of those students who received a grade lower than 8."
+
+--could that be the join condition?
+
+--it is so complicated.
+
+--how do I sort names into grades.  when the grade is loosely tied to the mark?
+
+--alright, fine
+--basically,
+
+--I need a way to sort?
+--or link 87 to be GRADE 9
+
+--there must be nice way of doing it.
+
+--I am thinking just on 
+--yeah. I simply do not know how to do this.
+
+--a window function?
+
+--I feel like window functions work from columns and not rows.
+
+--how can i explore?
+
+--let me refresh my knowledge on WINDOW FUNCTIONS.
+
+--i think a window construct might be a good thing to work on
+
+--however, at this moment in time
+--I do feel like button mashing any window function
+
+--i guess i feel like i don't get their point too much
+
+--maybe this will help get me to know them better.
+
+--yeah,
+--i think window constructs might help.
+
+--but when I try to focus in to how to get any one value from Marks.
+--how can it be filtered?
+--I do see that each value in Marks does get its turn 
+--but its turn at what and how?
+
+--i feel like building a simple IN
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks = Grades.--here is where I am stumpted.
+
+--what can I do?
+--can I do JOIN through a WHERE clause?
+
+--I think I am getting an idea from a page that I will need to look at 
+--neverming.
+--ON is processed before WHERE.
