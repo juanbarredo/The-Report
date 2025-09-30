@@ -204,3 +204,71 @@ SELECT *
 --I think I am getting an idea from a page that I will need to look at 
 --neverming.
 --ON is processed before WHERE.
+
+-----------------------------09 29 2025-------------------------------
+--definitely lost
+--so just want to explore options again.
+
+--ii am now convinced again that it is - as i see it now - a really complex (for me) JOIN.
+
+-- I am confusing
+-- the Mark is going to filter in.
+--how?
+--Through the ON.
+
+--this is one heck of an idea I am getting.
+
+--if statement.
+--if min_mark more than
+
+--yeah, i am getting lost in the sauce.
+
+--I am unsure of how then some mechanic happens.
+
+--I have to do deep study in how cells are selected.
+
+--I direct that selection.
+
+--but at some point.
+--am i at that point right now?
+
+--less than Max_Mark might be a key
+
+--let me build up the query.
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks in 
+	(
+	SELECT Grades.Max_Mark
+		FROM Grades
+	);
+
+	--this is effing crazy.
+
+	--i actually got a result set.
+	--i just need to tweak it but I am learning for sure.
+
+	--this has been so much fun.
+	--I need to go back to the lines from 243 to 246.
+	--ok,
+--amazing.
+--so yeah,
+--it is matching exactly when a Students.Marks is equal to a Grades.Max_Mark.
+
+--and only displaying those.
+
+--the JOIN condition is weird then.
+
+--it seems like I don't understand why they ended up joined like it did.
+
+--when I 
+--wow, yeah
+--I need to get a better handle on JOINs.
+
+--I am excited to!
+
+	
+
+	--i am broken.
