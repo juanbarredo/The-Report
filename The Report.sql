@@ -272,3 +272,71 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 	
 
 	--i am broken.
+
+---------------------------09 30 2025------------------------------------------
+--
+--I need to figure out JOINs
+
+--INNER JOIN
+
+--this past finding.
+--regarding the query in lines 239 - 246.
+
+--has literally changed my life.
+
+--JOINs have exploded in posibilities.
+
+--i feel the urge to do a CROSS JOIN on the two tables.
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students CROSS JOIN Grades;
+
+--I am confused by the resulting set.
+--love it.
+
+--then should I try another sort of JOIN?
+--but through my new found complex JOIN finding.
+--the one on lines 239 - 246.
+
+--the selection process.
+--i need to refine it.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks in 
+--	(
+--	SELECT Grades.Grade
+--		FROM Grades
+--		WHERE Students.Marks BETWEEN Students.Marks AND Grades.Max_mark
+--	);
+
+--now I am having a spinning head.
+--will i have to include the Students.Marks in the second part of the ON clause.
+
+--I got an empty result set.
+--but not an error.
+
+--just the wrong answer.
+
+--ok, so the BETWEEN operator might not work
+
+--apparently someone used "<= and >" instead of BETWEEN.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks in 
+--	(
+--	SELECT Grades.Grade
+--		FROM Grades
+--		WHERE Students.Marks <= Students.Marks AND Grades.Max_mark
+--	);
+
+--Never mind,
+--crashing out.
+
+--well,
+--not sure what else to approach 
+--except deep empathy with the problem.
