@@ -236,14 +236,14 @@ SELECT *
 
 --let me build up the query.
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks in 
-	(
-	SELECT Grades.Max_Mark
-		FROM Grades
-	);
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks in 
+--	(
+--	SELECT Grades.Max_Mark
+--		FROM Grades
+--	);
 
 	--this is effing crazy.
 
@@ -288,9 +288,9 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 
 --i feel the urge to do a CROSS JOIN on the two tables.
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students CROSS JOIN Grades;
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students CROSS JOIN Grades;
 
 --I am confused by the resulting set.
 --love it.
@@ -340,3 +340,58 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --well,
 --not sure what else to approach 
 --except deep empathy with the problem.
+
+------------------------------10 02 2025---------------------------------------------
+
+--alright,
+--I think I have gotten a clearer picture of what the JOIN ON condition is.
+
+--wow,
+--ok,
+
+--at least right now I see an amazing direction to take.
+
+--as the JOIN ON condition,
+--"Ketty doesn't want the NAMES of the students who received a grade lower than 8."
+
+--what are the two columns that can be used as the JOIN ON?
+--I think it might actually be something like 3 columns.
+
+--let me see.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Name IN 
+--	(
+--	SELECT Grades.Grade
+--		FROM Grades
+--		WHERE Grade 
+--		(
+--
+--		)
+--	);
+
+--I have to focus on one specific part of the problem now.
+
+--"students who received a grade lower than 8."
+
+--how do I get students who received a grade lower than 8.
+--I need to do the subquery.
+
+--the subquery will be something like.
+--(if allowed to begin with)
+
+--SELECT Grades.Grade
+--		FROM Grades
+--		WHERE Grade 
+--		(
+--		Students.Marks 
+--		)
+
+--ok,
+--I think I need to focus on specifically one thing
+
+--how to get every value in Students.Marks to be evaluated to see if they are in between any of the Grades.Min_Mark and Grades.Max_Mark.
+
+--I think I am burnt out as I stand.
