@@ -395,3 +395,50 @@ SELECT *
 --how to get every value in Students.Marks to be evaluated to see if they are in between any of the Grades.Min_Mark and Grades.Max_Mark.
 
 --I think I am burnt out as I stand.
+
+------------------------------10 05 2025----------------------------------------
+
+--ok,
+
+--so
+--yeah,
+
+--how can I get so many things going.
+
+--I need to somehow understand how the Students.Marks
+
+--I am seeing a possible place to look at.
+
+--"Ketty doesn't want the NAMES of the students who received a grade lower than 8."
+
+USE The_Report;
+SELECT Grades.Grade
+	FROM Grades JOIN Students
+	ON Grades.Grade = Students.Marks
+	WHERE Marks BETWEEN Min_Mark AND Max_Mark;
+
+--Do I need to read the book with the BETWEEN operator or something?
+
+--I mean, I am completely lost.
+
+--yeah, this is getting really weird.
+
+--WHERE budget >= 250000 AND budget <= 1250000;
+
+--this is almost there sorta
+
+--but I still have to figure out s missing a huge missing relationship
+
+--I mean the relationship is hard to put into code.
+--I seem to have two sorts of things going on
+
+--I need to separate them and work them out.
+
+--the Students.Marks being sorted to see if it falls between Min_Marks and Max_Marks.
+
+--somehow isn't line 437 the JOIN condition?
+
+--but it can been made bettwe by already including that:
+--"Ketty doesn't want the NAMES of the students who received a grade lower than 8."
+
+--this sort of prompt has just completely re-wrote how I imagine JOINS in the first place.
