@@ -411,11 +411,11 @@ SELECT *
 
 --"Ketty doesn't want the NAMES of the students who received a grade lower than 8."
 
-USE The_Report;
-SELECT Grades.Grade
-	FROM Grades JOIN Students
-	ON Grades.Grade = Students.Marks
-	WHERE Marks BETWEEN Min_Mark AND Max_Mark;
+--USE The_Report;
+--SELECT Grades.Grade
+--	FROM Grades JOIN Students
+--	ON Grades.Grade = Students.Marks
+--	WHERE Marks BETWEEN Min_Mark AND Max_Mark;
 
 --Do I need to read the book with the BETWEEN operator or something?
 
@@ -442,3 +442,59 @@ SELECT Grades.Grade
 --"Ketty doesn't want the NAMES of the students who received a grade lower than 8."
 
 --this sort of prompt has just completely re-wrote how I imagine JOINS in the first place.
+
+--------------------------------------10 12 2025---------------------------------
+--back at it
+
+--I am fundamentally lost on how to solve this one.
+
+--I am going to try and see how to get a JOIN condition written up that links up Grade and Name.
+
+--the Students.Marks being sorted to see if it falls between Min_Marks and Max_Marks.
+--is also a very important thing that I have to work out.
+
+--so,
+
+--USE The_Report;
+--SELECT Grades.Grade
+--	FROM Grades JOIN Students
+--	ON Grades.Grade 
+
+--I think I have to find a simpler problem to solve where there isn't a JOIN before having to do the comparison.
+--it gets wrapped itself up.
+
+--I can't think anything up.
+
+--let me think about another way.
+--how can I get Students.Marks to filter through Grades.Min_Mark and Grades.Max_Mark.
+
+--what is the function?
+--how does the 
+
+--USE The_Report;
+--SELECT Grades.Grade
+--	FROM Grades
+--	WHERE Grades.Grade IN
+
+--yeah, I am fundamentally not understading how or what the sequence of operations are/is
+--to take advantage and build a query around it.
+
+--something about less than or equal to is coming to me.
+
+--like, how.
+
+--WHERE Students.Marks <= Grades.Max_Mark?
+--I am having trouble imagining how to write a query 
+--
+
+--USE The_Report;
+--SELECT
+
+--The thing is also
+--How do I even write up a way to get Students.Marks
+--this is very frustrating.
+
+--I think my breaktrhough right now
+--is how I might only need to use Grades.Max_Mark and not Grades.Min_Mark.
+
+--I will try and build upon that.
