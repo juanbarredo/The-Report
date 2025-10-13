@@ -498,3 +498,80 @@ SELECT *
 --is how I might only need to use Grades.Max_Mark and not Grades.Min_Mark.
 
 --I will try and build upon that.
+
+---------------------------------------------10 13 2025----------------------------------------------
+
+--so,
+--it has come to me that I could work on this through an inequality.
+
+--maybe get Grades.Marks to be >= Max_Mark.
+
+--I think this locks them in to check each value with each value.
+
+--then I pass the Grades.Grade back that it belongs to.
+--WHERE or in this case this would be in the JOIN statement.
+--so weird.
+
+--I am getting that weird feeling of reeling.
+--or that I have already thought this?
+--I have already thought this too much.
+
+--very well, this means that I have to work that much harder at this.
+
+--it is honestly hard to get any more in.
+
+--ok,
+--let me see about crafting a join with the innequalities.
+
+--USE The_Report;
+--SELECT Grades.Grade 
+--	FROM Grades JOIN Students
+--	ON Students.Marks IN 
+--	(
+--	SELECT Grades.Max_Mark
+--	FROM Students
+--	);
+
+--the above query.
+--from lines 526 to 532.
+--I am moving very slowly towards something.
+
+--I am still baffled that these sorts of JOINs are working.
+--technically.
+
+--I get the logical part?
+
+--weird.
+
+--I need to phrase this differently
+--
+
+--what can I get as a logically successful join going.
+
+--I think this is the key at this moment in time.
+
+--I guess I have already proven its possibility.
+--I just need to tweak the logical approach.
+
+--what 
+--can I just get the marks and max_mark columns to line up.
+--through the correct innequality I feel.
+
+--we can isolate the other side of the JOIN statement.
+--the right now subquery-ish join.
+
+--is this the wrong way to see it even?
+
+USE The_Report;
+SELECT Grades.Max_Mark
+	FROM Grades;
+
+--so very simple thus far.
+
+--what would I want to have this joined through?
+--I am thinking an inequality.
+--but because of the nature of how this JOIN works.
+--I can't have duplicates values.
+
+--well,
+--what duplicate values were there?
