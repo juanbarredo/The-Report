@@ -562,9 +562,9 @@ SELECT *
 
 --is this the wrong way to see it even?
 
-USE The_Report;
-SELECT Grades.Max_Mark
-	FROM Grades;
+--USE The_Report;
+--SELECT Grades.Max_Mark
+--	FROM Grades;
 
 --so very simple thus far.
 
@@ -575,3 +575,48 @@ SELECT Grades.Max_Mark
 
 --well,
 --what duplicate values were there?
+
+------------------------------10 16 2025--------------------------------
+
+--ok,
+--looking at this again.
+
+--ok,
+--so, I am getting stuck at a very specific phase.
+
+--the innequality.
+
+--WHERE Grades.Grade < 8
+--the above line is what I think I can build the query around.
+
+--can the JOIN be just that.
+--less that 8?
+--something is missing.
+
+--they are asking for Name, Grade and Marks.
+--I still think I have to get Students.Marks < 79
+--I think elegantly, I have to not do the above.
+--because this requires me to look or know the database.
+--when SQL was made for when the database is not known.
+
+--so, then I will have to just say that they are asking for Grades.Grade < 8
+--then the JOIN condition is between Students.Marks and Grades.Grade.
+--or Grades.Grade and Students.Marks 
+--but Students.Marks needs to be lined up with Grades.Min_Mark, right?
+--as long as the student gets a Mark of at least 70, they get an 8.
+--this confuses me.
+--but it makes sense.
+--I just have to wrap myself around it.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks =
+--what am I not getting here?
+--seems I need to?
+--find something else.
+--what?
+--the ON clause.
+--Students.Marks is related to Min_Mark and Max_Mark
+--because it was meant to be used as a comparison
+--they were meant for each other.
