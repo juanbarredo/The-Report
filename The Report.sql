@@ -620,3 +620,56 @@ SELECT *
 --Students.Marks is related to Min_Mark and Max_Mark
 --because it was meant to be used as a comparison
 --they were meant for each other.
+
+----------------------------10 19 2025---------------------------------------
+--seems that I am working on this again
+
+--I am having a two part problem
+--the JOIN and the distinction between
+--what a Mark is and what Grade belongs to it.
+
+--how can I tackle this.
+
+--I want to do an IF statement?
+
+--can I nest an IF statement in a JOIN?
+
+--like IF Students.Marks 
+--yeah, there my knowledge oh how SQL works is lacking
+--severely lacking.
+
+--yeah, I feel like this is way more suited for Python.
+--but here I am
+
+--ok,
+--let me build a query where I can simulate somethihng
+
+USE The_Report;
+SELECT Grades.Grade
+	FROM Grades
+	WHERE Min_Mark = 80;
+
+--I am having ahard time imagining how to go from here
+--because out of nowhere everything is a variable.
+
+--let me now see if I can get a query that uses the between?
+
+--USE The_Report;
+--SELECT Grades.Grade
+--	FROM Grades
+--	WHERE Grade 
+
+--I think that I am going to need to work on a side quest.
+--mainly understanding how it is that this will work.
+
+--ok,
+--yeah,
+--i seem to be two abstractions away from the next step
+--can I at least name them?
+
+--how can I get every value in the Students.Marks column
+--to be sorted between each row where there is a Min_Mark and a Max_Mark?
+
+--maybe I can start with just studying a few examples of the BETWEEN clause?
+--I think that this will be my next task of study.
+
