@@ -644,10 +644,10 @@ SELECT *
 --ok,
 --let me build a query where I can simulate somethihng
 
-USE The_Report;
-SELECT Grades.Grade
-	FROM Grades
-	WHERE Min_Mark = 80;
+--USE The_Report;
+--SELECT Grades.Grade
+--	FROM Grades
+--	WHERE Min_Mark = 80;
 
 --I am having ahard time imagining how to go from here
 --because out of nowhere everything is a variable.
@@ -673,3 +673,79 @@ SELECT Grades.Grade
 --maybe I can start with just studying a few examples of the BETWEEN clause?
 --I think that this will be my next task of study.
 
+--------------------------10 21 2025---------------------------------
+
+--super glad I got to practice today
+
+--i've taken up sewing classes so they will definitely take up extra time
+--but I feel energized by the new hobby.
+
+--ok,
+--I believe I am trying to learn about the BETWEEN clause.
+
+--I will look at the book.
+
+--it is actually the BETWEEN operator.  not clause.
+
+-- the BETWEEN operator might not exactly do what I am looking for.
+
+--but the syntax interested me.
+--the 
+--WHERE budget >= 95000 AND budget <= 120000;
+--I feel like I can test this one out.
+
+--but I don't think because there are no examples of how to add variables.
+--I am still not understanding something about 
+
+--can I make a JOIN where the operator
+--is something like
+--ON Students.Marks > 80
+
+--I created such a weird thing
+--but the 80 is such a shortcut.
+
+--WHERE Students.Marks > 80
+
+--well,
+--actually it is Grades.Grade = 8
+--or less than 8.
+--she doesn't want less than 8.
+
+--8 is a 70 - 79.
+
+--so,
+--WHERE Grades.Grade >= 8
+
+--somehow.
+--how do I join in such a scenario as this one?
+
+--i feel like I want to try and solve this through a subquery.
+
+--should the subquery be the JOIN ON condition?
+--so weird
+
+--I will try it
+--I need to know why it might work.
+
+--I think it *could* work
+--because I want to send up a specific result set.
+--the result set that belongs to
+--the Students.Name, Grades.Grade, Students.Marks
+--that get a grade higher than an 8.
+
+--so,
+--the 
+--WHERE Grades.Grade > 8
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks >
+--	(
+--	SELECT
+
+--lost
+--where can I continue
+--I think I got burnt out when BETWEEN operator failed as a possible way to the solution
+
+--what else can I try?
