@@ -749,3 +749,49 @@ SELECT *
 --I think I got burnt out when BETWEEN operator failed as a possible way to the solution
 
 --what else can I try?
+
+------------------------------------------------10 23 2025--------------------------------------------
+
+--so,
+--I am definitely at a loss
+
+--maybe I will read the JOIN ON part of the book.
+
+--ok,
+
+--I am stuck thinking about how there seems to be two problems I am running into
+
+--the JOIN columns
+--but there are none
+
+--which leads me to believe 
+
+--that I can just make it so that the JOIN is only the students who made more than a Grade of 8.
+
+--I think that this will be the other side of the JOIN.
+
+--let me get that subquery.
+
+USE The_Report;
+SELECT Grades.Grade, Grades.Min_Mark, Grades.Max_Mark
+	FROM Grades
+	WHERE  Grades.Grade >= 8;
+
+--ok, then.
+
+--now, how can I get 
+
+--I need to learn hwo the JOIN ON works specifically more.
+--a bit more.
+
+--ok,
+--i got the freedom i was looking for.
+
+--on the microsoft website.
+--it says "A join conditioin defines the way two tables are related in a query by:"
+
+--the way two tables are related.
+
+--key concept.
+
+--I need to think of the logical nature of this.
