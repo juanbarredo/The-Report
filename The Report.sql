@@ -795,3 +795,60 @@ SELECT Grades.Grade, Grades.Min_Mark, Grades.Max_Mark
 --key concept.
 
 --I need to think of the logical nature of this.
+
+------------------------10 26 2025-----------------------\
+
+--was able to see the original wording 
+--and my understanding is more or less correct
+
+--so,
+--i still have no idea how
+--but I have gotten thus far.
+
+--so, these two tables are related.
+
+--how are they related.
+
+--the Marks of the Students table is meant to be filtered through the Grades table for proper grading.
+
+--the relationship is such that there are grades associated with a range of Marks.
+--the relationship is literally defined for each grade by the Min_Mark and Max_Mark columns.
+--each Mark is to be filtered into each row to see if it is between any of the rows.
+--for example,
+--87 is a Mark in the Students.Marks column
+--therefore it is filtered into the first column
+--or as it is defined by the database engine.
+--pretty sure on mine it is one by one.  top down.
+--so,
+--on the first row of Grades table is for a grade of 1 the Student's Mark must be between 0 and 9.
+--and so one until the right row is found by when the Student's Mark is between a Min_Mark and Max_Mark.
+--such that 87 is a Grade of 9 because it is between the Min_Mark of 80 and the Max_Mark of 89.
+
+--ok,
+--how could I write this up.
+
+--could I do a between.
+
+--
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
+
+--wow,
+--it workd
+
+--this is insane.
+--ok,
+--let me see then.
+--I wasn't sure that BETWEEN took column names as input.
+--based on my research it only seemed to take non-variables.
+--any way,
+--I guess here it can?
+--so weird.
+--I will hope to finish this next time.
