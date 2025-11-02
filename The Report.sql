@@ -24,13 +24,13 @@
 
 --let me print off some result sets.
 
-USE The_Report;
-SELECT *
-	FROM Students;
+--USE The_Report;
+--SELECT *
+--	FROM Students;
 
-USE The_Report;
-SELECT *
-	FROM Grades;
+--USE The_Report;
+--SELECT *
+--	FROM Grades;
 
 --Nice,
 --the tables look glorious.
@@ -772,10 +772,10 @@ SELECT *
 
 --let me get that subquery.
 
-USE The_Report;
-SELECT Grades.Grade, Grades.Min_Mark, Grades.Max_Mark
-	FROM Grades
-	WHERE  Grades.Grade >= 8;
+--USE The_Report;
+--SELECT Grades.Grade, Grades.Min_Mark, Grades.Max_Mark
+--	FROM Grades
+--	WHERE  Grades.Grade >= 8;
 
 --ok, then.
 
@@ -835,10 +835,10 @@ SELECT Grades.Grade, Grades.Min_Mark, Grades.Max_Mark
 --	FROM Students JOIN Grades
 --	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
 
 --wow,
 --it workd
@@ -852,3 +852,111 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --I guess here it can?
 --so weird.
 --I will hope to finish this next time.
+
+-------------------------------------11 02 2025-----------------------------
+
+--ok,
+
+--I hope to finish this probelms today
+--I think I just need to get the WHERE clause.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade > 8;
+
+	--ok,
+
+	--there is more to it.
+	--I now have to re-read 
+	--but I think I have to re-order the result set.
+
+--"the report must be in descending order by grade"
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+	WHERE Grades.Grade >= 8
+	ORDER BY Grades.Grade DESC;
+
+--ok,
+--the next part of the problem
+
+--"if there is more than one student with the same grade (8-10) assigned to them,
+--order those particular students by their name alphabetically."
+
+--I am unsure how to tackle this part in lines 887-888.
+--feels like busy work at this point.
+
+--this is where I use GROUP BY.
+
+--ok,
+--what was the syntax of that?
+
+--I am looking at the book pages 149-151
+--I am wondering if I should group by Name of Grade?
+--I think it is by grade.
+
+--then the name are alphabetic.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+	--ORDER BY Grades.Grade DESC
+--	GROUP BY Grades.Grade;
+
+	--I am getting an interesting error that is making me rework the query.
+	--I may not after all finish this today.
+
+--"Msg 8120, Level 16, State 1, Line 905
+--Column 'Students.Name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause."
+
+--I am going to have to re-explore GROUP BY.
+--the book was only so helpful.
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	--ORDER BY Grades.Grade DESC
+--	GROUP BY Students.Name;
+
+--Msg 8120, Level 16, State 1, Line 905
+--Column 'Students.Name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+--Msg 8120, Level 16, State 1, Line 922
+--Column 'Grades.Grade' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+
+--yeah,
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	--ORDER BY Grades.Grade DESC
+--	GROUP BY Students.Name, Grades.Grade;
+
+--Msg 8120, Level 16, State 1, Line 905
+--Column 'Students.Name' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+--Msg 8120, Level 16, State 1, Line 922
+--Column 'Grades.Grade' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+--Msg 8120, Level 16, State 1, Line 937
+--Column 'Students.Marks' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+	WHERE Grades.Grade >= 8
+	--ORDER BY Grades.Grade DESC
+	GROUP BY Students.Name, Grades.Grade, Students.Marks;
+
+--ok,
+--yeah,
+
+--I need to look at this closer.
