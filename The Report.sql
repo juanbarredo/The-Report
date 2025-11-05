@@ -948,15 +948,65 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --Msg 8120, Level 16, State 1, Line 937
 --Column 'Students.Marks' is invalid in the select list because it is not contained in either an aggregate function or the GROUP BY clause.
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
-	WHERE Grades.Grade >= 8
-	--ORDER BY Grades.Grade DESC
-	GROUP BY Students.Name, Grades.Grade, Students.Marks;
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	--ORDER BY Grades.Grade DESC
+--	GROUP BY Students.Name, Grades.Grade, Students.Marks;
 
 --ok,
 --yeah,
 
 --I need to look at this closer.
+
+--------------------------------11 04 2025-------------------------------------------
+
+--alright
+--I need to remember why I can't use GROUP BY without 
+--yeah,
+--I think it is coming back to me.
+--if I am grouping by then I need to have some sort of aggregation that is grouped.
+--maybe
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+	--ORDER BY Grades.Grade DESC
+--	GROUP BY Grades.Grade;
+
+--maybe the GROUP BY isn't the option here.
+--so,
+--then,
+--is it one of those weird nested functions int he SELECT list?
+
+--I am reading more about the problem and it is very very complicated.
+--this is absolutely going to take me months to solve.
+
+--for now,
+--let me see how to solve
+--I am honestly completely lost 
+--but it isn't like with the JOIN 
+--I need to break it down into parts.
+
+--how can I break this down further?
+
+USE The_Report;
+SELECT Students.Name, Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+	WHERE Grades.Grade >= 8
+	ORDER BY Grades.Grade, Students.Name ASC;
+
+--Nice,
+--I got something else down I believe.
+--what can I do next?
+--the NULL stuff
+--the GROUP BY wasn't needed at all
+--or at least thus far.
+
+--ok,
+--setting null values seems to lead nowhere right now
