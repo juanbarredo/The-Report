@@ -1009,4 +1009,34 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --or at least thus far.
 
 --ok,
---setting null values seems to lead nowhere right now
+--setting null values seems to lead nowhere right now.
+
+--------------------------11 09 2025--------------------------------------
+
+--ok,
+--right now,
+--the only thing I see worth looking into it is through a UNION of two queries.
+
+--the problem is that I am still unsure how to do a NULL replacement value or whaterver where the rule is WHERE Grades.Grade > 8.
+--ok, so just something where in the SELECT statement?
+
+--"finally, if the grade is lower than 8, use 'NULL' as their name."
+
+--ok,
+
+--so there it is.
+--I think that this is the next item for me to hyper focus on.
+--ok,
+
+--I have found the next lead.
+--the PRINT statement.
+--can I SELECT PRINT "NULL", Grades.Grade, Students.Marks-it?
+--I feel i need to play with the PRINT Statement more plainly
+
+--USE The_Report;
+--SELECT PRINT 'NULL', Students.Name
+--	FROM Students;
+
+--ok,
+--it looks like I can't use the PRINT Statement in the SELECT Statement line.
+--I will have to use it on it's own line.
