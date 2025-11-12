@@ -1040,3 +1040,49 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --ok,
 --it looks like I can't use the PRINT Statement in the SELECT Statement line.
 --I will have to use it on it's own line.
+
+--------------------------11 11 2025--------------------------------------
+
+--I am focusing on the PRINT statement
+
+--so,
+
+--I am absolutely learning that the PRINT is a statement like SELECT 
+
+--there are rules about a SELECT and PRINT statement in the same query.
+--apparently and this is something I want to test out.
+
+--you need a 
+
+--USE The_report;
+--SELECT *
+--	FROM Grades
+--	PRINT "hello";
+
+	--well now I am confused because I got an error.
+	--but the error says the column names are not permitted.
+	--the query in lines 1057 to 1060 is challenging me.
+
+--USE The_report;
+--SELECT *
+--	FROM Grades
+--	PRINT 'hello';
+
+	--Ok,
+	--but now no 'hello' at all.
+--begin
+--	PRINT 'hello';
+--end
+
+--even with the blocking of begin in line 1073
+--and end at line 1075
+
+--hello isn't being printed.
+
+--the print statement is not going to work here.
+
+--the PRINT statement prints  to the 'Messages' tab next to the 'Results' tab.
+
+--i am exhausted.
+
+--as of right now we are abandoning the PRINT statement.
