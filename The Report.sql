@@ -1086,3 +1086,40 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --i am exhausted.
 
 --as of right now we are abandoning the PRINT statement.
+
+------------------------------------------------11 16 2025---------------------------------------------------
+
+--so,
+
+--I am mainly excited to have this time to focus on such funny things
+
+--I am now going to see if which direction I need to go.
+--or to at least chart the next thing to study in order to solve this problem
+--break a querry into small actions.
+
+
+--sometimes that action is that the next action needs to be defined.
+
+--ok,
+--I have found an expression.
+
+--an expression by the name of NULLIF(expression, expression).
+
+--I will start reading about it.
+
+--the argument is any valid scalar expression?
+--I wil have to learn those.
+
+--ok,
+--NULLIF is very weird
+--why did it need to be invented
+--what is the history behind it.
+
+--"NULLIF(MakeFlag, FinishedGoodsFlag) AS [NULL IF Equal]"
+
+--I found this perfect line to build a query off of.
+
+--ok,
+--I have a new direction to work on and I am happy about it.
+
+--
