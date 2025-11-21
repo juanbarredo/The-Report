@@ -1123,3 +1123,38 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --I have a new direction to work on and I am happy about it.
 
 --
+
+--------------------------------------------11 20 2025------------------------------------------------------
+
+--ok,
+--I want to try a quick query
+
+USE The_Report;
+SELECT NULLIF (Grades.Grade, 7)
+	FROM Grades;
+
+	--I am finding this really weird case stuff.
+
+--[Null if Equal] = 
+--CASE
+--	WHEN MakeFlag = FinishedGoodsFlag THEN NULL
+--	ELSE MakeFlag
+--END
+
+--This is wild.
+
+--so,
+--getting back on track.
+	
+--USE The_Report;
+--SELECT NULL IF Equal (Grades.Grade, 7)
+--	FROM Grades;
+
+--I have been taken for a ride from the learn.microsoft webpage.
+
+--there is so much I need to look into to make sense of what has been made very apparent to me.
+
+--seriously so much
+--very exciting.
+
+--right now I am wondering about the AS [Null if Equal] passing between GO statements?
