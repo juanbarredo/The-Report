@@ -1158,3 +1158,35 @@ SELECT NULLIF (Grades.Grade, 7)
 --very exciting.
 
 --right now I am wondering about the AS [Null if Equal] passing between GO statements?
+
+--------------------------11 23 2025---------------------------------------------------
+
+--ok
+
+--I am unsure where to continue right now
+
+--so,
+--my simple solution which doesn't seem to work but out of nowhere the examples on the microsoft website are very complex.
+--complex enought to make me wonder why my simple <7 wouldn't work.
+
+--Alright,
+--so,
+--"scalar expressions are functions that return a single value, even if executed on an entire column"--  SQream
+
+--i need to focus on what scalar functions are then.  since clearly my >7 example brings in more that one value.
+--so, I think that NULLIF might not work in this case.
+--because I am trying to scan a whole column not reduce one to one value.
+
+--I might need to move on from NULLIF after all.
+
+--le sigh.
+
+--ok,
+--then,
+--ok,
+--yeah,
+--just saw a video on PRINT statement and yes.  not usefull here.
+--otherwise,
+--i may need to see a video on NULLIF but I still can't see why.
+--ok,
+--yea.  I should watch a video on NULLIF.
