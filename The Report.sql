@@ -1190,3 +1190,38 @@ SELECT NULLIF (Grades.Grade, 7)
 --i may need to see a video on NULLIF but I still can't see why.
 --ok,
 --yea.  I should watch a video on NULLIF.
+
+-------------------------------------------11 25 2025-------------------------------------------------
+
+--crazy,
+
+--i am watching a video and it is definitely guiding the way.
+
+--WHERE NULLIF(column_name, '') IS NULL
+
+--so the problem is the labeling.
+--then I think I might have to do back at the join?
+--I guess I am still thinking about this.
+
+--now I need to see if this guy iterates over or whatever.
+--and gives me values regarding like functions.
+
+--the example from microsoft was way too complex
+
+--I need a middle example.
+
+--I think I need to look into CASE statements.
+
+--but yeah,
+--this guy is introducing me to the solution.
+
+--the case statement.
+
+--I am honestly burnt out at the moment.
+
+--because that insight was enough to engender a sense of wonder
+--a sense of wonder for me pleasently wandering my way into the answer.
+
+--and I need to sit with it and enjoy it.
+
+--the video is "Using SQL NULLIF with Missing Values | Essential SQL"
