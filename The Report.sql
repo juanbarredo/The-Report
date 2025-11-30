@@ -1225,3 +1225,39 @@ SELECT NULLIF (Grades.Grade, 7)
 --and I need to sit with it and enjoy it.
 
 --the video is "Using SQL NULLIF with Missing Values | Essential SQL"
+
+------------------------------------------11 30 2025-------------------------------------------------------------
+
+--so,
+--i believe i am at the next part of the solution.  i just have to work on the CASE stuff.
+
+--he himself in the video is a guy who does the CASE statement stuff.
+
+--so, I want to test the CASE statement stuff.
+
+--I either or and want to look at what the book has to say.
+
+--there seems to be two types of CASE expressions!
+
+--case is an expression.
+
+--simple case expression
+--searched case expression.
+
+--both are very similar right now.
+
+--similar enough to confuse me.
+
+--I am unsure how I can tell them apart.
+
+--the answer to me is crisply displayed at in page and as well in the video mentioned in line 1227.
+
+--I think I am done right now already.
+
+--the difference between a simple and searched CASE expressions.
+
+--they are very similar and I can't process it right now.
+
+--i can see that one starts with an expression
+--i think my confusion comes from not understanding what an expression is.
+--i may need to look into that.
