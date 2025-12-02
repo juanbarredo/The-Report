@@ -1261,3 +1261,49 @@ SELECT NULLIF (Grades.Grade, 7)
 --i can see that one starts with an expression
 --i think my confusion comes from not understanding what an expression is.
 --i may need to look into that.
+
+---------------------------------12 01 2025---------------------------------------------
+
+--wow,
+--just adding 20250 changed my life.
+
+--amazing.
+
+--ok,
+--so.
+
+
+--I imagine that I need to work on learning what an expression is.
+
+--ok,
+
+--sad but for now I have to abandon the book.
+
+----I have resolved to keep working.
+
+--CASE itself is an expression.
+
+--The microsoft website says "a combination of symbols and operators that the SQL Server Database Engine evaluates to obtain a single value."
+
+--the syntax is so illuminating.
+
+--syntax symbols that used to be meaningless before have sprung into life.
+
+--syntaxsql
+--{ constant | scalar_function | [ table_name. ] column | variable
+--		| ( expression ) | ( scalar_subquery )
+--		| { unary_operator } expression
+--		| expression { binary_operator } expression
+--		| ranking_windowed_function | aggregate_windowed_function
+--}
+
+--wow, I am sick of questions.
+
+--ok, so amazingly "|" (vertical bar) separates syntax items enclosed in brackets or braces.  you can only use one of the items.
+
+--amazing explanation from the microsoft website on syntax conventions.
+
+--specifically, "you can only use one of the items" ... in between vertical bars.
+
+--so many questions.
+--I am very excited.
