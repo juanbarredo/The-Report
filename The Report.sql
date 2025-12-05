@@ -994,12 +994,12 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 
 --how can I break this down further?
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
-	WHERE Grades.Grade >= 8
-	ORDER BY Grades.Grade, Students.Name ASC;
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	ORDER BY Grades.Grade, Students.Name ASC;
 
 --Nice,
 --I got something else down I believe.
@@ -1129,9 +1129,9 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --ok,
 --I want to try a quick query
 
-USE The_Report;
-SELECT NULLIF (Grades.Grade, 7)
-	FROM Grades;
+--USE The_Report;
+--SELECT NULLIF (Grades.Grade, 7)
+--	FROM Grades;
 
 	--I am finding this really weird case stuff.
 
@@ -1307,3 +1307,45 @@ SELECT NULLIF (Grades.Grade, 7)
 
 --so many questions.
 --I am very excited.
+
+-------------------------------------------------------12 04 2025------------------------------------------------------------------
+
+--I have to build a CASE expression.
+
+--what will the case be.
+--when Grades.Grade is less that an 8.  make the names print as NULL.
+
+--we can do a quick case study.
+
+--USE The_Report;
+--SELECT Students.Name, Students.Marks, Grades.Grade = 
+--	CASE Students.Name
+--		WHEN Grades.Grade > 8 THEN 'NULL'
+--	END,
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+
+--surprised at how it turned out.
+--the query in lines 1320 to 1326.
+
+--anyway,
+--
+
+--USE The_Report;
+--SELECT Students.Name,
+--	CASE 
+--		WHEN Students.Marks > 77 THEN 'Null'
+--		ELSE 4
+--		END 
+--			FROM Students;
+
+--(16 rows affected)
+--Msg 245, Level 16, State 1, Line 1335
+--Conversion failed when converting the varchar value 'Null' to data type int.
+
+--Completion time: 2025-12-04T20:20:43.7914744-05:00
+
+--dang,
+--I really need to double think my approach again.
+
+--I will do CASE examples from the book next.
