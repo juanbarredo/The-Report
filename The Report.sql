@@ -1349,3 +1349,21 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --I really need to double think my approach again.
 
 --I will do CASE examples from the book next.
+
+------------------------------------------12 07 2025---------------------------------------
+
+--so,
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks,
+--	CASE
+--		WHEN Students.Marks > 7 THEN Students.Name 'Null'
+--		ELSE 
+--	END 
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	ORDER BY Grades.Grade DESC;
+
+	--ok,
+	--i tried to see if I could work out a solution but I really do need to practice CASE examples.
