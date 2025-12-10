@@ -1367,3 +1367,40 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 
 	--ok,
 	--i tried to see if I could work out a solution but I really do need to practice CASE examples.
+
+-----------------------12 09 2025-------------------------------------------
+
+--I am super excited because I have found out that I can use functions in tsql clauses.
+
+--can I do ISNULL()?
+
+--or rather NULLIF()?
+
+--exciting.
+
+--expressions.
+--again stuff with this "obtain a single data value"
+--this doesn't sit right with me.
+
+--I mean, even the questions ask for result sets.
+
+--does this mean then that the single value is the 
+
+--ok,
+--either way.
+
+---"simple expressions can be a single constant, variable, column, or scalar function.
+--Operators can be used to join two or more simple expressions into a complex expression." - microsoft website on Expressions (Transact-SQL)
+
+--i am burnt.
+
+--i am very excited to learn more about expressions.
+
+--i want to look into what a scalar function is.
+
+--scalar functions are not what I expected.
+
+--ok,
+--I continue my search
+
+--i will review next time and probably get back to checking if I can use NULLIF().
