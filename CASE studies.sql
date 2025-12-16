@@ -105,3 +105,70 @@ SELECT *
 
 --(The result of this example is too larege to be displayed.)
 
+--------------------------------------------12 15 2025-------------------------------------------------------
+
+--I am going to continue working on the CASE chapter or rather section.
+
+--USE AdventureWorks2017;
+--GO
+--SELECT ProductNumber, Category =
+--			CASE --ProductLine 
+--				WHEN 'R' THEN 'Road'
+--				WHEN 'M' THEN 'Mountain' 
+--				WHEN 'T' THEN 'Touring'
+--				WHEN 'S' THEN 'Other sale items'
+--				ELSE 'Not for sale'
+--			END,
+--		Name
+--	FROM Production.Product;
+
+	--I am trying to disect the CASE example about the line 115 "ProductLine" key word.
+	--will it work without it?
+	--it will not.
+
+	--and the error just wants the condition.
+
+	--it calls it a "condition".
+	--interesting.
+
+	--it feels like here it is a funtion.
+	--or well,
+	--it is an expression.
+	--it has rules?
+	--by the way I have been using it.
+	--yes, it has rules.
+
+	--its funny how CASE works.
+	--Ihad it confused with the SELECT statement as well.
+	--but the select statement has the simple expression version.
+	--it feels like it is searching already thought?
+
+	--let's see what the next one is.
+
+--The syntax of the searched CASE expession is
+
+--CASE
+--	{WHEN condtion_1 THEN result_1} ...
+--		{ELSE result_n}
+--END
+
+--It feels the very same as the last or the simple CASE statement form.
+
+--A Transact-SQL statement with the searched CASE expressionlooks for the first expression that evaluates to TRUE.
+--If none of the WHEN conditions evaluates to TRUE,,
+--the value of the ELSE expression is returned.
+
+--EXAMPLE 6.50 shows the use of the searched CASE expression.
+
+--EXAMPLE 6.50
+
+USE sample;
+SELECT Project_name,
+		CASE 
+			WHEN budget > 0 AND budget < 100000 THEN 1
+			WHEN BUDGET >= 100000 AND BUDGET < 200000 THEN 2
+			WHEN budget >= 200000 AND budget < 300000 THEN 3
+			ELSE 4
+		END budget_weight
+	FROM project;
+
