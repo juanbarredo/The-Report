@@ -172,3 +172,30 @@ SELECT Project_name,
 		END budget_weight
 	FROM project;
 
+------------------------------12 28 2025------------------------------------------------------
+
+--ok,
+--I am still wandering what else to do now that the two examples on CASE expressions in the book are done.
+
+--I still have so many questions.
+
+--but I got some insights
+
+--I am wondering if I can tackle this problem 
+--or the next part at least.
+
+--let me just 
+
+--In Example 650,
+--budgets of all projects are weighted,
+--and calculated weights (together with the name of the corresponding project)
+--are displayed.
+
+--so,
+--which will work best.
+
+--a Simple or Searched CASE expression?
+
+--I think I will try a searched CASE expression.
+
+

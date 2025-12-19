@@ -1404,3 +1404,36 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --I continue my search
 
 --i will review next time and probably get back to checking if I can use NULLIF().
+
+--------------------------------12 18 2025--------------------------------------------------
+
+--877 - 882 query copied below
+
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	ORDER BY Grades.Grade DESC;
+
+--I want to add the searched CASE expression
+
+--USE The_Report;
+--SELECT  Students.Name, --Grades.Grade, Students.Marks
+--		CASE
+--		WHEN Students.Marks > 8 THEN NULL 
+--		ELSE 
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	ORDER BY Grades.Grade DESC;
+
+--I am stuck
+--I believe that I either need to look at more examples 
+--which is probably what I will do
+
+--or move on to another method.
+
+--maybe I need to now look up how to make it so that "ELSE leave it alone"
+
+--but I don't have the spoon to look into it further.
