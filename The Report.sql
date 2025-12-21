@@ -1437,3 +1437,32 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 --maybe I need to now look up how to make it so that "ELSE leave it alone"
 
 --but I don't have the spoon to look into it further.
+
+--I need to build a query with the new knowledge of leaving it alone.
+
+--a small test to build confidence
+
+--lets see
+
+USE The_Report;
+SELECT Students.Marks,
+		CASE 
+			WHEN Students.Marks < 80 THEN Null
+			ELSE ' '
+		END test
+	FROM Students;
+
+--wow,
+--really nice work
+--it made me realize a bit better what CASE expressions are 
+--I again feel like maybe a CASE expression will not work for me?
+
+--I will try a simple CASE expressionnext.
+
+--USE The_Report;
+--SELECT Students.Name =
+--		CASE Students.Marks
+--			WHEN 80
+
+--ok, I am pooped.
+
