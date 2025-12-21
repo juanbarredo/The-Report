@@ -198,4 +198,16 @@ SELECT Project_name,
 
 --I think I will try a searched CASE expression.
 
+------------------------------12 21 2025----------------------------------------------
+
+--so I am thinking about how I am not being very organized between the CASE studies and The Report sql files.
+
+--But I need to figure out how to make it so that if there is nothing to do.  
+
+--or the ELSE to be "leave it alone" or "print whatever value is stored, etc."
+
+--I will do a google search.
+
+--ok, apparently it is "ELSE ' '"
+
 
