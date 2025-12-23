@@ -1466,3 +1466,59 @@ SELECT Students.Marks,
 
 --ok, I am pooped.
 
+--USE The_Report;
+--SELECT Students.Marks,
+--		CASE 
+--	-		WHEN Students.Marks < 80 THEN Null
+--			ELSE ' '
+--		END S
+--	FROM Students;
+
+------------------------12 22 2025----------------------------------
+--I just realized I have been working on this problem since september 22nd le sigh
+
+--but I have seriously learned so much too
+
+-- this is literally the way.
+
+--so,
+--I 
+
+USE AdventureWorks2017;
+SELECT *
+	FROM Production.Product;
+
+	--I am now thinking that a simple CASE expression might work.
+
+USE The_Report;
+SELECT Names =
+			CASE Students.Marks
+				WHEN  87 THEN Null
+				ELSE ' '
+			END,
+		Grades.Grade, Students.Marks
+	FROM Students JOIN Grades
+	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
+
+--now I am unsure where to go with this
+
+--I think I am needing some new direction
+--should I watch some videos?
+
+--should I reread the problem
+--I might need to see about videos on CASE expressions
+
+--otherwise,
+--how else can I solve this?
+
+--I can't think of any other way
+--this book just doesn't have too much on CASE expressions
+
+--might this have to be a special case of a searched
+
+--because, well the simple CASE expression doesn't let me use boolean operators.
+
+--I think I just need to see more CASE expressions worked out.
+
+--to see the range of options
+--I feel like I am looking for a very specific phrasing that I just don't know yet
