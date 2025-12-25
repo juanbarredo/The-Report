@@ -1521,4 +1521,20 @@ SELECT Names =
 --I think I just need to see more CASE expressions worked out.
 
 --to see the range of options
---I feel like I am looking for a very specific phrasing that I just don't know yet
+--I feel like I am looking for a very specific phrasing that I just don't know yet.
+
+-------------------------------------------------12 25 2025-----------------------------------------------------
+
+--i am watching videos.
+
+--I am watching one by ALEX THE ANALYST.
+--it is really helpfull.
+
+--www.youtube.com/watch?v=Twusw_OzA8
+
+--aaron bertrand is someone I need to look into I guess.
+
+--Erick Darnling is amazing
+
+--I can watch him all day
+--I learned too much and I need to watch more.
