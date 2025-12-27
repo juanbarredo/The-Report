@@ -1538,3 +1538,18 @@ SELECT Names =
 
 --I can watch him all day
 --I learned too much and I need to watch more.
+
+---------------------------------12 27 2025----------------------------------------------------
+
+--going in to watch some videos by this alex the analyst guy
+
+--so,
+--I am stuck in a moment.
+
+--I might be choosing to restart my learning through this alex the analyst guy
+--I just "joined" his youtube channel for 3.99 a month or whatever.
+
+--he does seem to make lots of sense to me
+
+--write from the beginning like performance matters.
+
