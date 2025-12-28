@@ -1553,3 +1553,18 @@ SELECT Names =
 
 --write from the beginning like performance matters.
 
+----------------------12 28 2025---------------------------------
+
+--back at it with videos of this guy
+
+--inner joins and left joins?
+
+--apparently he uses them all the time?
+
+--I definitely need to get joins down.
+
+--I feel like I lost some time with this
+--but whatever
+
+--youtube.com/watch?v=zuGxu3-fho0&t=671s
+
