@@ -1568,3 +1568,61 @@ SELECT Names =
 
 --youtube.com/watch?v=zuGxu3-fho0&t=671s
 
+------------------------------12 29 2025------------------------------
+
+--super excited to keep learning today.
+
+--I am watching the video on EXISTS.
+
+--from Alex the Analyst
+
+--exists vs not exists
+
+--not exists is how i love to think all the time.
+
+--ok,
+
+--i really like the way this guy thinks
+
+--really interesting.
+
+--I will keep watching his videos.
+
+-----------------------12 30 2025---------------------------------
+
+--ok,
+
+--back to watching videos
+
+--actually, it is not Alex the Analyst.
+
+--it is Erick Darling!
+
+--so sorry to Erick for not writting his name correctly.
+
+--ok,
+--done with the EXISTS and NOT EXISTS video
+--I am left with lots of questions.
+
+--so, I should try some things
+
+
+--I need to actually think about this slowly with problems.
+
+--lets see if the book has some examples.
+
+--ok,
+
+--page 1921-193
+
+--Subqueries and the EXISTS Function
+
+--The EXISTS function takes an inner query as an argument and reurns TRUE 
+--if the inner query returns one or more rows,
+--and returns FALSE if it return zero rows.
+--The function will be explained using examples,
+--starting with Examples 6.71.
+
+--EXAMPLE 6.71
+
+--get the last name of all employees who work on project p1:
