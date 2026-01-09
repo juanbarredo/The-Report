@@ -874,12 +874,12 @@
 
 --"the report must be in descending order by grade"
 
-USE The_Report;
-SELECT Students.Name, Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
-	WHERE Grades.Grade >= 8
-	ORDER BY Grades.Grade DESC;
+--USE The_Report;
+--SELECT Students.Name, Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark
+--	WHERE Grades.Grade >= 8
+--	ORDER BY Grades.Grade DESC;
 
 --ok,
 --the next part of the problem
@@ -1444,13 +1444,13 @@ SELECT Students.Name, Grades.Grade, Students.Marks
 
 --lets see
 
-USE The_Report;
-SELECT Students.Marks,
-		CASE 
-			WHEN Students.Marks < 80 THEN Null
-			ELSE ' '
-		END test
-	FROM Students;
+--USE The_Report;
+--SELECT Students.Marks,
+--		CASE 
+--			WHEN Students.Marks < 80 THEN Null
+--			ELSE ' '
+--		END test
+--	FROM Students;
 
 --wow,
 --really nice work
@@ -1484,21 +1484,21 @@ SELECT Students.Marks,
 --so,
 --I 
 
-USE AdventureWorks2017;
-SELECT *
-	FROM Production.Product;
+--USE AdventureWorks2017;
+--SELECT *
+--	FROM Production.Product;
 
 	--I am now thinking that a simple CASE expression might work.
 
-USE The_Report;
-SELECT Names =
-			CASE Students.Marks
-				WHEN  87 THEN Null
-				ELSE ' '
-			END,
-		Grades.Grade, Students.Marks
-	FROM Students JOIN Grades
-	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
+--USE The_Report;
+--SELECT Names =
+--			CASE Students.Marks
+--				WHEN  87 THEN Null
+--				ELSE ' '
+--			END,
+--		Grades.Grade, Students.Marks
+--	FROM Students JOIN Grades
+--	ON Students.Marks BETWEEN Grades.Min_Mark AND Grades.Max_Mark;
 
 --now I am unsure where to go with this
 
@@ -1626,3 +1626,54 @@ SELECT Names =
 --EXAMPLE 6.71
 
 --get the last name of all employees who work on project p1:
+
+-------------------------------01 08 2025---------------------------------
+
+--HAPPY NEW YEAR
+
+--I am not going to be able to update as often as I would like because I have started an Associates of Science in Accounting Technology from Miami Dade College.
+
+--But I am excited to be here right now.
+
+--I need to know the syntax of the EXISTS function.
+
+USE sample;
+SELECT emp_lname 
+	FROM employee
+	WHERE NOT EXISTS 
+	(SELECT * 
+		FROM department
+		WHERE employee.dept_no = department.dept_no
+		AND location = 'Seattle');
+
+--So interesting.
+
+--the SELECT list of an outer query involving the EXISTS function is not required to be of the form SELECT *
+---so here is an outer query.
+---very interesting.
+
+--The form SELECT column_list, where column_list is on or more columns of the table,
+--is an alternate form.
+
+--because the EXISTS function tests only the existence (i.e., nonexsitence) of rows in the result set.
+--For this reason, the use of SELECT * in the case is safe.
+
+--very intesting.
+
+--this book is not teaching for performance.
+
+--I think I should look into getting a book on performance.
+
+--I could ask what's his name!
+
+--ok,
+
+--I am getting a list of books to read instead.
+
+--"the guru's guide to SQL server architecture and internals" -- ken henderson.
+
+--lots of ken henderson apparently
+
+--"the guru's guide to TRANSACT-SQL"
+
+--"the guru's guide to sql server stored prcedures xtnml and html"
